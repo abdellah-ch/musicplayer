@@ -8,16 +8,20 @@ function App() {
   return (
     <div className="App">
       <Sidbar />
-      <div className="">
+      <div className="main">
         <Searchbar />
         <div className="music">
+        <div >
           <Routes>
             <Route path="/" element={<Discover />} />
             <Route path="/top-artists" element={<TopArtists />} />
 
           </Routes>
+          </div>
         </div>
-        <div className="top_play"></div>
+        <div className="top_play">
+          topplay
+        </div>
       </div>
     </div>
   );

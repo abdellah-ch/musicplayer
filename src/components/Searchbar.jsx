@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 
 export default function Searchbar() {
   const navigate = useNavigate();
+  const [searchTerm, setsearchTerm] = useState("");
 
-  return <div>Searchbar</div>;
+  const handeleSubmit = (e) => {
+    e.preventDefault();
+
+    navigate('/')
+  };
+  return (
+    <form className="form" onSubmit={handeleSubmit}>
+      <label htmlFor="search-field">Search all files</label>
+      <div className="search_container">
+        <FiSearch className="search_icon" />
+        <input
+          type="search"
+          name="search-field"
+          autoComplete="off"
+          id="search-field"
+          className="search_field"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={(e) => setsearchTerm(e.target.value)}
+        />
+      </div>
+    </form>
+  );
 }
