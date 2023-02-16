@@ -39,7 +39,7 @@ if(data)
 {  return (
     <div className='discover'>
       <div className='song_genre'>
-          <h2 className='discover'>Discover</h2>
+          <h2 className=''>Discover</h2>
 
           <select className='select' name="" id="">
             {genres.map((genre)=><option key={genre.value} value={genre.value}>{genre.title}</option>)}

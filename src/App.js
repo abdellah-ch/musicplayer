@@ -16,7 +16,7 @@ function App() {
       <div className="main">
         <Searchbar />
         <div className="music">
-        <div >
+        <div className="routes">
           <Routes>
             <Route path="/" element={<Discover />} />
             <Route path="/top-artists" element={<TopArtists />} />

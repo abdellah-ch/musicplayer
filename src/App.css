@@ -11,9 +11,6 @@
     position: relative;
 
     display: flex;
-
-    height: 100%;
-
 }
 
 .main{
@@ -24,6 +21,8 @@
     flex-direction: column;
 
     background-color: #122486;
+
+    display: table;
 }
 
 .music{
@@ -35,15 +34,23 @@
 
     padding-right: 24px;
 
-    height: 100vh;
+    height: calc(100vh - 72px);
 
-    overflow-y:scroll ;
+    overflow-y:scroll ; 
 
+    -webkit-overflow-scrolling: touch;
 
 }
 
+.routes{
+    display: flex;
+
+    height: fit-content;
+
+    padding-bottom: 160px;
+}
+
 .top_play{
-    position: sticky;
 
     position: relative;
 
@@ -51,7 +58,9 @@
 
     height: fit-content;
 }
-.music::-webkit-scrollbar { width: 0 !important }
+.music::-webkit-scrollbar {
+     width: 0 !important;
+      }
 
 .menu_icon{
     display: none;
@@ -68,7 +77,7 @@
 }
 
 .sidebar{
-    height: 100vh-10px;
+    height: 100vh;
 
     display: flex;
 
@@ -317,6 +326,7 @@ label{
     justify-content: center;
 
     gap: 24px;
+
 }
 
 .song_genre{
@@ -462,6 +472,7 @@ label{
 }
 
 @media (max-width:768px){
+   
     
     .menu_icon{
         display: block;
@@ -477,8 +488,6 @@ label{
 
     .songs_container{
         justify-content: flex-start;
-
-        height: 100vh;
     }
 
     .song_genre{
@@ -490,9 +499,7 @@ label{
 
     }
     .music_player{
-        padding-left: 48px;
-
-        padding-right: 48px;
+       display: none;
     }
     .seek_bar_input{
         display: block;
@@ -500,12 +507,14 @@ label{
         width: 96px;
     }
     .controls{
-        display: flex;
+        /* display: flex;
     
         align-items: center;
     
         justify-content: space-around;
     
-        width: 96px;
+        width: 96px; */
+        display: none;
     }
+   
 }
