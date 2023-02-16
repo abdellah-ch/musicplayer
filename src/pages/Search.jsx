@@ -29,7 +29,7 @@ function Search() {
       setData(response.data.tracks.hits);
     };
     fetchData();
-  }, []);
+  }, [searchTerm]);
   if (!data) {
     return <>....</>;
   } else
