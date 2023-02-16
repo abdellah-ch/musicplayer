@@ -34,7 +34,6 @@ function Discover() {
     fetchData();
   }, []);
   //end  of api call
-  console.log(data);
 if(data)
 {  return (
     <div className='discover'>

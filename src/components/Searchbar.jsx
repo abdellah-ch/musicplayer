@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
+
+
 
 export default function Searchbar() {
   const navigate = useNavigate();
@@ -8,9 +10,9 @@ export default function Searchbar() {
 
   const handeleSubmit = (e) => {
     e.preventDefault();
-
-    navigate('/')
+    navigate(`/search/${searchTerm}`);
   };
+
   return (
     <form className="form" onSubmit={handeleSubmit}>
       <label htmlFor="search-field">Search all files</label>

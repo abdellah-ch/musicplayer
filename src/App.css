@@ -7,10 +7,17 @@
 
 }
 
+body{
+    height: 100vh;
+    overflow-y: hidden
+}
+
 .App{
     position: relative;
 
     display: flex;
+
+    height: 100vh;
 }
 
 .main{

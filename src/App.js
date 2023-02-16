@@ -7,6 +7,7 @@ import Searchbar from "./components/Searchbar";
 import TopArtists from "./pages/TopArtists";
 import TopPlay from "./components/TopPlay";
 import MusicPlayer from "./components/MusicPlayer";
+import Search from "./pages/Search";
 function App() {
   const { activeSong } = useSelector((state) => state.player);
 
@@ -20,6 +21,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Discover />} />
             <Route path="/top-artists" element={<TopArtists />} />
+            <Route path="/Search/:searchTerm" element={<Search />} />
+
 
           </Routes>
           </div>
