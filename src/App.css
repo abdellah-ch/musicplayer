@@ -27,9 +27,10 @@ body{
 
     flex-direction: column;
 
+    padding-left: 250px;
+
     background-color: #122486;
 
-    display: table;
 }
 
 .music{
@@ -89,6 +90,8 @@ body{
     display: flex;
 
     flex-direction: column;
+
+    position: fixed;
     
     width: 240px;
 
@@ -101,6 +104,8 @@ body{
     padding-right: 16px;
 
     background-color: #191624;
+
+    z-index: 10;
 
 }
 
@@ -523,5 +528,9 @@ label{
         width: 96px; */
         display: none;
     }
-   
+     
+   .main{
+    padding-left: 0;
+   }
+
 }
