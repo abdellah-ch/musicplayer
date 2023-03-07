@@ -523,9 +523,12 @@ label{
        /* display: none; */
        overflow: hidden;
        display: flex;
+       justify-content: space-around;
     }
     .track_info{
-        width: 20%;
+        position: relative;
+        left: 0;
+        margin-right: 10px;
     }
     .audio_sett{
         width: 80%;
