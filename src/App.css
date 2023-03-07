@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     overflow-y: hidden
 }
 
@@ -17,7 +17,9 @@ body{
 
     display: flex;
 
-    height: 100vh;
+    height: 100%;
+
+    width: 100%;
 }
 
 .main{
@@ -394,6 +396,8 @@ label{
 
     z-index: 10;
 
+    width: 100%;
+
 }
 
 .music_player{
@@ -511,22 +515,36 @@ label{
 
     }
     .music_player{
-       display: none;
+       /* display: none; */
+       overflow: hidden;
+       display: flex;
+    }
+    .track_info{
+        width: 20%;
+    }
+    .audio_sett{
+        width: 80%;
     }
     .seek_bar_input{
-        display: block;
+        /* display: block;
 
-        width: 96px;
+        width: 96px; */
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    .track_image{
+        width: 40px;
     }
     .controls{
-        /* display: flex;
+        display: flex;
     
         align-items: center;
     
         justify-content: space-around;
     
-        width: 96px; */
-        display: none;
+        width: 96px;
     }
      
    .main{
