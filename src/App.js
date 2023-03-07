@@ -16,20 +16,20 @@ function App() {
       <Sidbar />
       <div className="main">
         <Searchbar />
-        <div className="music">
+        <div className="music" >
         <div className="routes">
           <Routes>
             <Route path="/" element={<Discover />} />
-            <Route path="/top-artists" element={<TopArtists />} />
-            <Route path="/Search/:searchTerm" element={<Search />} />
+            <Route path="/top-artists" element={<Discover />} />
+            <Route path="/Search/:searchTerm" element={<Discover />} />
 
 
           </Routes>
           </div>
         </div>
-        <div className="top_play">
+        {/* <div className="top_play">
           <TopPlay/>
-        </div>
+        </div> */}
       </div>
       {
         activeSong?.title && (

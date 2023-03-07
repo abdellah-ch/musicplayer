@@ -12,16 +12,11 @@ body{
     overflow-y: hidden
 }
 
-.App{
-    position: relative;
-
-    display: flex;
-
+#root{
     height: 100%;
 
     width: 100%;
 }
-
 .main{
     display: flex;
 
@@ -33,9 +28,12 @@ body{
 
     background-color: #122486;
 
+
 }
 
 .music{
+
+
     display: flex;
 
     flex-direction: column-reverse;
@@ -44,18 +42,18 @@ body{
 
     padding-right: 24px;
 
-    height: calc(100vh - 72px);
+    padding-bottom: 40px;
 
-    overflow-y:scroll ; 
+    /* height: fit-content; */
 
-    -webkit-overflow-scrolling: touch;
+    min-height: 80vh;
 
 }
 
 .routes{
     display: flex;
 
-    height: fit-content;
+    /* height: fit-content; */
 
     padding-bottom: 160px;
 }
@@ -68,9 +66,7 @@ body{
 
     height: fit-content;
 }
-.music::-webkit-scrollbar {
-     width: 0 !important;
-      }
+
 
 .menu_icon{
     display: none;
@@ -341,7 +337,16 @@ label{
 
     gap: 24px;
 
+    overflow-y:scroll ; 
+
+    height: calc(68vh);
+
+    margin-bottom: 50px;
+
 }
+.songs_container::-webkit-scrollbar {
+    width: 0 !important;
+     }
 
 .song_genre{
     width: 100%;
