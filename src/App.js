@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Discover />} />
             <Route path="/top-artists" element={<Discover />} />
-            <Route path="/Search/:searchTerm" element={<Discover />} />
+            <Route path="/Search/:searchTerm" element={<Search />} />
 
 
           </Routes>
